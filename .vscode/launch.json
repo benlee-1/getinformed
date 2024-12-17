@@ -2,19 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "name": "Launch Go Program",
+      "type": "go",
       "request": "launch",
-      "name": "Launch TypeScript (ts-node-dev)",
-      "runtimeExecutable": "ts-node-dev",
-      "runtimeArgs": [
-        "--respawn",
-        "--transpile-only",
-        "--inspect"
-      ],
-      "args": ["src/server.ts"],
-      "sourceMaps": true,
-      "cwd": "${workspaceFolder}",
-      "protocol": "inspector"
+      "mode": "auto",
+      "program": "${workspaceFolder}",
+      "env": {},
+      "args": []
     }
   ]
 }
